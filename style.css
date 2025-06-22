@@ -114,20 +114,20 @@ footer {
 .service-table {
     width: 100%;
     max-width: 700px;
-    border-collapse: collapse;
-    margin-top: 1rem;
+    border-collapse: separate;
+    border-spacing: 0 16px; /* Adds vertical space between rows */
+    margin-top: 1.5rem;
     font-size: 1.05rem;
-    background-color: #fff;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    background-color: transparent;
 }
 
 .service-table th,
 .service-table td {
-    padding: 1rem 1.25rem;
+    padding: 1rem 1.5rem;
     text-align: left;
-    border-bottom: 1px solid #eee;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
 }
 
 .service-table th {
@@ -136,9 +136,15 @@ footer {
     font-size: 1.1rem;
 }
 
-.service-table tr:last-child td {
-    border-bottom: none;
+.service-table td {
+    font-weight: 400;
+    color: #333;
 }
+
+.service-table tr {
+    border-bottom: none !important;
+}
+
 
 @keyframes fadeIn {
     from {
